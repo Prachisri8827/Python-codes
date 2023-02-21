@@ -1,14 +1,14 @@
 import pgzrun
 
 music.play('drmn')
-music.set_volume(20)
+music.set_volume(50)
 
-b = Rect((50,50), (50,25))
+b = Actor('icecreame', (50,50))
 vx, vy = 3, 2
 
 def draw():
     screen.fill('aqua')
-    screen.draw.filled_rect(b, 'blue')
+    b.draw()
 
 def update():
     global vx, vy
